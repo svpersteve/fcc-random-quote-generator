@@ -12,3 +12,45 @@
  *
  *= require_self
  */
+
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,500);
+
+body {
+  background-color: #16a085;
+  font-family: 'Raleway', sans-serif;
+}
+
+.quote-container {
+  background-color: #ffffff;
+  padding: 40px 50px;
+  width: 450px;
+  margin: 15% auto auto auto;
+  border-radius: 3px;
+}
+
+.quote {
+  text-align: center;
+}
+
+.author {
+  text-align: right;
+}
+
+.new-quote {
+  text-align: right;
+  margin-top: 30px;
+
+  a {
+    padding: 10px;
+    background-color: #16a085;
+    border-radius: 3px;
+    text-decoration: none;
+  }
+
+  a,
+  a:visited,
+  a:active,
+  a:hover {
+    color: #ffffff;
+  }
+}

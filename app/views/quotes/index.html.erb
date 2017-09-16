@@ -1,3 +1,7 @@
-<h1><%= @quote.content %></h1>
-<p><%= @quote.author %></p>
-<%= link_to 'New quote', next_quote_path %>
+<div class="quote-container">
+  <h1 class="quote"><%= @quote.content %></h1>
+  <p class="author">- <%= @quote.author %></p>
+  <div class="new-quote">
+    <%= link_to 'New quote', next_quote_path %>
+  </div>
+</div>
