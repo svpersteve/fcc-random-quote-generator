@@ -20,6 +20,11 @@ body {
   font-family: 'Raleway', sans-serif;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .quote-container {
   background-color: #ffffff;
   padding: 40px 50px;
@@ -44,7 +49,6 @@ body {
     padding: 10px;
     background-color: #16a085;
     border-radius: 3px;
-    text-decoration: none;
   }
 
   a,
@@ -52,5 +56,16 @@ body {
   a:active,
   a:hover {
     color: #ffffff;
+  }
+}
+
+.share-links {
+  i {
+    text-align: center;
+    border-radius: 3px;
+    padding: 10px;
+    background-color: #16a085;
+    color: #ffffff;
+    min-width: 16px;
   }
 }
