@@ -1,20 +1,26 @@
+<style>
+  body {
+    background-color: <%= @colour %>;
+  }
+</style>
+
 <div class="quote-container">
   <h1 class="quote"><%= @quote.content %></h1>
   <p class="author">- <%= @quote.author %></p>
 
   <div class="share-links">
     <%= link_to "https://twitter.com/intent/tweet?hashtags=quotes&related=freecodecamp&text=#{@quote.content}, #{@quote.author}", target: '_blank' do %>
-      <i class="fa fa-twitter"></i>
+      <i class="fa fa-twitter" style="background-color: <%= @colour %>"></i>
     <% end %>
 
     <%= link_to "https://www.tumblr.com/widgets/share/tool?posttype=quote&tags=quotes,freecodecamp&caption=#{@quote.author}&content=#{@quote.content}&canonicalUrl=https%3A%2F%2Fwww.tumblr.com%2Fbuttons&shareSource=tumblr_share_button", target: '_blank' do %>
-      <i class="fa fa-tumblr"></i>
+      <i class="fa fa-tumblr" style="background-color: <%= @colour %>"></i>
     <% end %>
 
   </div>
 
   <div class="new-quote">
-    <%= link_to 'New quote', next_quote_path %>
+    <%= link_to 'New quote', next_quote_path, style: "background-color: #{@colour}" %>
   </div>
 </div>
 
